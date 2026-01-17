@@ -11,7 +11,7 @@ require('dotenv').config();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { SchemaType } = require('@google/generative-ai');
 
-const BODY_LIMIT_BYTES = 20 * 1024 * 1024; // 20MB
+const BODY_LIMIT_BYTES = 20 * 1024 * 1024;
 const SESSION_COOKIE_NAME = 'fc_session';
 const SESSION_TTL = 24 * 60 * 60 * 1000;
 const STATIC_METHODS = ['GET', 'HEAD'];
@@ -380,7 +380,7 @@ class NativeApp {
                 }
             }
         });
-        const reqUrl = new URL(nodeReq.url, `http://${nodeReq.headers.host || 'localhost'}`);
+        const reqUrl = new URL(nodeReq.url, `http://${nodeReq.headers.host || "localhost"}`);
         req = {
             raw: nodeReq,
             method: (nodeReq.method || 'GET').toUpperCase(),

@@ -972,8 +972,6 @@ section .how-it-works{
   transition: ease .4s;
 }
 
-
-
 .contact-form-container button {
   padding: 1rem 2rem;
   background: hsl(140, 62%, 40%);
@@ -1003,6 +1001,22 @@ section .how-it-works{
 
 .contact-form div input {
   margin-bottom: 12px;
+}
+
+.donate-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+}
+.donate-section h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 1rem;
+}
+.donate-section p {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 30%);
+  margin-bottom: 2rem;
 }
 
 footer {

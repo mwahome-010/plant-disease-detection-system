@@ -9,3 +9,4 @@ uploads/
 backup/
 test-api.js
 config.js
+sql-injection-test.html
